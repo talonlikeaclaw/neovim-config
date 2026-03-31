@@ -1,0 +1,28 @@
+local miniclue = require('mini.clue')
+
+miniclue.setup({
+  triggers = {
+    { mode = { 'n', 'x' }, keys = '<Leader>' },
+    { mode = { 'n', 'x' }, keys = 'g' },
+    { mode = 'n',           keys = '[' },
+    { mode = 'n',           keys = ']' },
+    { mode = 'n',           keys = '<C-w>' },
+    { mode = { 'n', 'x' }, keys = 'z' },
+    { mode = { 'n', 'x' }, keys = "'" },
+    { mode = { 'n', 'x' }, keys = '`' },
+    { mode = { 'n', 'x' }, keys = '"' },
+    { mode = { 'i', 'c' }, keys = '<C-r>' },
+    { mode = 'i',           keys = '<C-x>' },
+  },
+  clues = {
+    miniclue.gen_clues.builtin_completion(),
+    miniclue.gen_clues.g(),
+    miniclue.gen_clues.marks(),
+    miniclue.gen_clues.registers(),
+    miniclue.gen_clues.windows(),
+    miniclue.gen_clues.z(),
+    miniclue.gen_clues.square_brackets(),
+    -- Group labels
+    { mode = 'n', keys = '<Leader>l', desc = '+LSP' },
+  },
+})
