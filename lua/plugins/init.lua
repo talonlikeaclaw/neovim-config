@@ -4,3 +4,6 @@ vim.pack.add({
 })
 
 vim.cmd.colorscheme('catppuccin-mocha')
+
+require('plugins.completion')
+require('plugins.clue')
