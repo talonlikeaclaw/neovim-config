@@ -32,4 +32,5 @@ vim.lsp.enable({
   'taplo',
   'bashls',
   'vimls',
+  'ts_ls',
 })
