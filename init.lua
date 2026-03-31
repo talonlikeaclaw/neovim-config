@@ -11,5 +11,12 @@ vim.cmd.colorscheme("catppuccin-mocha")
 
 -- Mini
 vim.pack.add({ { src = 'https://github.com/nvim-mini/mini.nvim', name = 'mini.nvim' } })
+
+---- Completion
+require('mini.completion').setup()
+vim.keymap.set('i', '<CR>', function() return vim.fn.pumvisible() == 1 and '<C-y>' or '<CR>' end, { expr = true })
+
 -- LSP
+-- Register mini.completion capabilities with all LSP servers
+vim.lsp.config('*', { capabilities = MiniCompletion.get_lsp_capabilities() })
 vim.lsp.enable({ 'lua_ls' })
