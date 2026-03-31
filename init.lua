@@ -33,4 +33,6 @@ vim.lsp.enable({
   'bashls',
   'vimls',
   'ts_ls',
+  'marksman',
+  'harper_ls',
 })
