@@ -9,5 +9,7 @@ vim.loader.enable()
 vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })
 vim.cmd.colorscheme("catppuccin-mocha")
 
+-- Mini
+vim.pack.add({ { src = 'https://github.com/nvim-mini/mini.nvim', name = 'mini.nvim' } })
 -- LSP
 vim.lsp.enable({ 'lua_ls' })
