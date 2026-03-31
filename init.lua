@@ -4,3 +4,7 @@
 
 -- Enable the built-in Lua bytecode cache (20-30% startup improvement).
 vim.loader.enable()
+
+-- Colourscheme
+vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })
+vim.cmd.colorscheme("catppuccin-mocha")
