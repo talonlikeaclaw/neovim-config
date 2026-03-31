@@ -8,3 +8,6 @@ vim.loader.enable()
 -- Colourscheme
 vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })
 vim.cmd.colorscheme("catppuccin-mocha")
+
+-- LSP
+vim.lsp.enable({ 'lua_ls' })
