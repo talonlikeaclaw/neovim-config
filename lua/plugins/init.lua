@@ -8,4 +8,5 @@ vim.cmd.colorscheme('catppuccin-mocha')
 
 require('plugins.completion')
 require('plugins.clue')
+require('plugins.statusline')
 require('plugins.treesitter')
