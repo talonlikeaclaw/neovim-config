@@ -19,4 +19,4 @@ vim.keymap.set('i', '<CR>', function() return vim.fn.pumvisible() == 1 and '<C-y
 -- LSP
 -- Register mini.completion capabilities with all LSP servers
 vim.lsp.config('*', { capabilities = MiniCompletion.get_lsp_capabilities() })
-vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'gopls', 'pylsp', 'sqlls' })
+vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'gopls', 'pylsp', 'sqlls', 'dockerls', 'yamlls' })
