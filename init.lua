@@ -35,4 +35,5 @@ vim.lsp.enable({
   'ts_ls',
   'marksman',
   'harper_ls',
+  'emmet_ls',
 })
