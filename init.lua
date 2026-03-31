@@ -1,6 +1,7 @@
 -- Neovim v0.12.0 Configuration
 -- Resources:
 -- 	- https://echasnovski.com/blog/2026-03-13-a-guide-to-vim-pack
+-- 	- https://neovim.io/doc/user/lsp/
 
 -- Enable the built-in Lua bytecode cache (20-30% startup improvement).
 vim.loader.enable()
@@ -19,4 +20,16 @@ vim.keymap.set('i', '<CR>', function() return vim.fn.pumvisible() == 1 and '<C-y
 -- LSP
 -- Register mini.completion capabilities with all LSP servers
 vim.lsp.config('*', { capabilities = MiniCompletion.get_lsp_capabilities() })
-vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'gopls', 'pylsp', 'sqlls', 'dockerls', 'yamlls' })
+vim.lsp.enable({
+  'lua_ls',
+  'rust_analyzer',
+  'gopls',
+  'pylsp',
+  'sqlls',
+  'dockerls',
+  'yamlls',
+  'jsonls',
+  'taplo',
+  'bashls',
+  'vimls',
+})
