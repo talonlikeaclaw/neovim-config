@@ -8,5 +8,6 @@ vim.loader.enable()
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+require('builtins')
 require('plugins')
 require('lsp')
