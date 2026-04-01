@@ -24,6 +24,10 @@
       "rev": "7caec274fd19c12b55902a5b795100d21531391f",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
+    "obsidian.nvim": {
+      "rev": "45ed985ae297ebd38c78942b714bfea98932073f",
+      "src": "https://github.com/obsidian-nvim/obsidian.nvim"
+    },
     "render-markdown.nvim": {
       "rev": "c7188a8f9d2953696b6303caccbf39c51fa2c1b1",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
