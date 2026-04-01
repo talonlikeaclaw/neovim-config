@@ -10,6 +10,7 @@ vim.pack.add({
 vim.cmd.colorscheme('catppuccin-mocha')
 
 require('plugins.icons')
+require('plugins.starter')
 require('plugins.notify')
 require('plugins.format')
 require('plugins.snippets')
