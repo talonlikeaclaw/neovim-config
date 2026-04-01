@@ -5,6 +5,7 @@ vim.pack.add({
   { src = 'https://github.com/stevearc/conform.nvim', name = 'conform.nvim' },
   { src = 'https://github.com/kdheepak/lazygit.nvim', name = 'lazygit.nvim' },
   { src = 'https://github.com/christoomey/vim-tmux-navigator', name = 'vim-tmux-navigator' },
+  { src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown.nvim' },
   { src = 'https://github.com/rafamadriz/friendly-snippets', name = 'friendly-snippets' },
 })
 
@@ -31,4 +32,5 @@ require('plugins.move')
 require('plugins.pairs')
 require('plugins.splitjoin')
 require('plugins.surround')
+require('plugins.markdown')
 require('plugins.treesitter')

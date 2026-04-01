@@ -24,6 +24,10 @@
       "rev": "7caec274fd19c12b55902a5b795100d21531391f",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
+    "render-markdown.nvim": {
+      "rev": "c7188a8f9d2953696b6303caccbf39c51fa2c1b1",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
     "vim-tmux-navigator": {
       "rev": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432",
       "src": "https://github.com/christoomey/vim-tmux-navigator"
