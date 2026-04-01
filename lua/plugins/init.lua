@@ -4,6 +4,7 @@ vim.pack.add({
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter', name = 'nvim-treesitter' },
   { src = 'https://github.com/stevearc/conform.nvim', name = 'conform.nvim' },
   { src = 'https://github.com/kdheepak/lazygit.nvim', name = 'lazygit.nvim' },
+  { src = 'https://github.com/christoomey/vim-tmux-navigator', name = 'vim-tmux-navigator' },
   { src = 'https://github.com/rafamadriz/friendly-snippets', name = 'friendly-snippets' },
 })
 
@@ -19,6 +20,7 @@ require('plugins.clue')
 require('plugins.statusline')
 require('plugins.diff')
 require('plugins.lazygit')
+require('plugins.tmux')
 require('plugins.files')
 require('plugins.pick')
 require('plugins.ai')
