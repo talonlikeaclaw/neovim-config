@@ -6,6 +6,7 @@ vim.pack.add({
 
 vim.cmd.colorscheme('catppuccin-mocha')
 
+require('plugins.notify')
 require('plugins.completion')
 require('plugins.clue')
 require('plugins.statusline')
