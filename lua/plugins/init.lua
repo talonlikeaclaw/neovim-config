@@ -4,6 +4,7 @@ vim.pack.add({
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter', name = 'nvim-treesitter' },
   { src = 'https://github.com/stevearc/conform.nvim', name = 'conform.nvim' },
   { src = 'https://github.com/kdheepak/lazygit.nvim', name = 'lazygit.nvim' },
+  { src = 'https://github.com/rafamadriz/friendly-snippets', name = 'friendly-snippets' },
 })
 
 vim.cmd.colorscheme('catppuccin-mocha')
@@ -11,6 +12,7 @@ vim.cmd.colorscheme('catppuccin-mocha')
 require('plugins.icons')
 require('plugins.notify')
 require('plugins.format')
+require('plugins.snippets')
 require('plugins.completion')
 require('plugins.clue')
 require('plugins.statusline')
