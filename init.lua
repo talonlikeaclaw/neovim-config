@@ -9,5 +9,6 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 require('builtins')
+require('options')
 require('plugins')
 require('lsp')
