@@ -28,5 +28,6 @@ miniclue.setup({
     { mode = 'n', keys = '<Leader>l', desc = '+LSP' },
     { mode = 'n', keys = '<Leader>o', desc = '+Obsidian' },
     { mode = 'n', keys = '<Leader>s', desc = '+Sessions' },
+    { mode = 'n', keys = '<Leader>w', desc = '+Windows' },
   },
 })
