@@ -8,6 +8,12 @@ vim.keymap.set('n', '<leader>wc', '<C-w>c', { desc = 'Close split' })
 vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close others' })
 vim.keymap.set('n', '<leader>we', '<C-w>=', { desc = 'Equalize splits' })
 
+-- Buffers
+vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>',     { desc = 'Next buffer' })
+vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Prev buffer' })
+vim.keymap.set('n', '<leader>bd', '<cmd>bdelete<CR>',  { desc = 'Delete buffer' })
+vim.keymap.set('n', '<leader>bD', '<cmd>bdelete!<CR>', { desc = 'Force delete buffer' })
+
 -- Resize with arrows
 vim.keymap.set('n', '<C-Up>',    '<cmd>resize +2<CR>',          { desc = 'Increase height' })
 vim.keymap.set('n', '<C-Down>',  '<cmd>resize -2<CR>',          { desc = 'Decrease height' })
