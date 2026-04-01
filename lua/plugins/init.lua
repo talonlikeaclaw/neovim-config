@@ -8,6 +8,7 @@ vim.pack.add({
 
 vim.cmd.colorscheme('catppuccin-mocha')
 
+require('plugins.icons')
 require('plugins.notify')
 require('plugins.format')
 require('plugins.completion')
