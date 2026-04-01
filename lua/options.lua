@@ -20,6 +20,7 @@ opt.cursorline  = true      -- highlight current line
 opt.scrolloff   = 8         -- keep 8 lines above/below cursor
 opt.wrap        = false     -- no line wrapping
 opt.showmode    = false     -- mode already shown in statusline
+opt.cmdheight   = 0         -- hide cmdline when not in use
 opt.splitright  = true      -- vsplit opens to the right
 opt.splitbelow  = true      -- split opens below
 
