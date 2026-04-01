@@ -1,6 +1,7 @@
 local miniclue = require('mini.clue')
 
 miniclue.setup({
+  window = { delay = 200 },
   triggers = {
     { mode = { 'n', 'x' }, keys = '<Leader>' },
     { mode = { 'n', 'x' }, keys = 'g' },
@@ -23,7 +24,7 @@ miniclue.setup({
     miniclue.gen_clues.z(),
     miniclue.gen_clues.square_brackets(),
     -- Group labels
-    { mode = 'n', keys = '<Leader>f', desc = '+Find' },
+    { mode = 'n', keys = '<Leader>f', desc = '+Find/File' },
     { mode = 'n', keys = '<Leader>g', desc = '+Git' },
     { mode = 'n', keys = '<Leader>l', desc = '+LSP' },
     { mode = 'n', keys = '<Leader>o', desc = '+Obsidian' },

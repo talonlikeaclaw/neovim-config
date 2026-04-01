@@ -8,6 +8,29 @@ vim.keymap.set('n', '<leader>wc', '<C-w>c', { desc = 'Close split' })
 vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close others' })
 vim.keymap.set('n', '<leader>we', '<C-w>=', { desc = 'Equalize splits' })
 
+-- Save / quit
+vim.keymap.set('n', '<leader>fs', '<cmd>w<CR>',   { desc = 'Save file' })
+vim.keymap.set('n', '<leader>fS', '<cmd>wa<CR>',  { desc = 'Save all files' })
+vim.keymap.set('n', '<leader>q',  '<cmd>q<CR>',   { desc = 'Quit' })
+vim.keymap.set('n', '<leader>Q',  '<cmd>qa!<CR>', { desc = 'Quit all' })
+
+-- Clear search highlight
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = 'Clear highlights' })
+
+-- Better line navigation (wrapped lines)
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, desc = 'Down' })
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, desc = 'Up' })
+
+-- Stay centered when jumping
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up' })
+vim.keymap.set('n', 'n',     'nzzzv',   { desc = 'Next match' })
+vim.keymap.set('n', 'N',     'Nzzzv',   { desc = 'Prev match' })
+
+-- Indent and stay in visual mode
+vim.keymap.set('v', '<', '<gv', { desc = 'Indent left' })
+vim.keymap.set('v', '>', '>gv', { desc = 'Indent right' })
+
 -- Buffers
 vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>',     { desc = 'Next buffer' })
 vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Prev buffer' })
