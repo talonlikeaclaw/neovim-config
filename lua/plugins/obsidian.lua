@@ -1,6 +1,6 @@
 require('obsidian').setup({
   workspaces = {
-    { name = 'TalonsBrain', path = '/home/talon/Documents/Obsidian/TalonsBrain' },
+    { name = 'TalonsBrain', path = vim.fn.expand('~/Documents/Obsidian/TalonsBrain') },
   },
 
   picker = { name = 'mini.pick' },
@@ -21,7 +21,8 @@ vim.api.nvim_create_autocmd('FileType', {
   callback = function()
     local buf = vim.api.nvim_get_current_buf()
     local path = vim.api.nvim_buf_get_name(buf)
-    if not path:find('/home/talon/Documents/Obsidian/', 1, true) then return end
+    local vault = vim.fn.expand('~/Documents/Obsidian/')
+    if not path:find(vault, 1, true) then return end
 
     local opts = { buffer = buf }
     vim.keymap.set('n', '<leader>on', '<cmd>Obsidian new<CR>',          vim.tbl_extend('force', opts, { desc = 'New note' }))
